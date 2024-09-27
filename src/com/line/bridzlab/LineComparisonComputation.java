@@ -2,7 +2,7 @@ package com.line.bridzlab;
 import java.util.Scanner;
 
 /*
-Author:Kiran Kajal Gaikwad
+Author: Kajal Gaikwad
 Desc:Compare Two length
 Date:26/09/2024
  */
