@@ -4,9 +4,9 @@ package com.line.bridzlab;
 import java.util.Scanner;
 
 /*
-Author:Kiran Kisan Kurhade
-Desc:Welcome Message Only
-Date:26/09/2024
+Author:KajaL Gaikwad
+Desc:Check Equality of line problem
+Date:27/09/2024
  */
 public class LineComparisonComputation {
 
