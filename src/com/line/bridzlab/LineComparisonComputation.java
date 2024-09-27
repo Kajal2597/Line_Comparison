@@ -1,12 +1,10 @@
 package com.line.bridzlab;
-
-
 import java.util.Scanner;
 
 /*
-Author:KajaL Gaikwad
-Desc:Check Equality of line problem
-Date:27/09/2024
+Author:Kiran Kajal Gaikwad
+Desc:Compare Two length
+Date:26/09/2024
  */
 public class LineComparisonComputation {
 
@@ -41,11 +39,20 @@ public class LineComparisonComputation {
 
         double len1 = getLengthLine1(x1, y1, x2, y2);
         double len2 = getLengthLine2(_x1, _y1, _x2, _y2);
-        System.out.println("Length of given Line having points "+"("+x1+","+y1+")"+"  "+"("+x2+","+y2+")"+" is: "+len1);
-        System.out.println("Length of given Line having points "+"("+_x1+","+_y1+")"+"  "+"("+_x2+","+_y2+")"+" is: "+len2);
+        System.out.println("Length of given Line having points " + "(" + x1 + "," + y1 + ")" + "  " + "(" + x2 + "," + y2 + ")" + " is: " + len1);
+        System.out.println("Length of given Line having points " + "(" + _x1 + "," + _y1 + ")" + "  " + "(" + _x2 + "," + _y2 + ")" + " is: " + len2);
 
         String l1 = Double.toString(len1);
         String l2 = Double.toString(len2);
+
+
+        if (l1.compareTo(l2) > 0)
+            System.out.println("Line1 is longer than line2");
+        else if (l1.compareTo(l2) == 0)
+            System.out.println("Line1 is equal to line2");
+        else
+            System.out.println("Line2 is longer than line1");
+
         boolean equal = l1.equals(l2);
         System.out.println("Equality of two lines : "+equal);
 
@@ -54,7 +61,7 @@ public class LineComparisonComputation {
         {
             return Math.sqrt(((x2 - x1)*(x2 - x1)) + ((y2- y1)*(y2- y1)));//Formula
         }
-        public static void main(String[] args)
+        public static void main String args[])
 
         {
             System.out.println("Welcome to Line Comparison Computation Program");
